@@ -1,5 +1,4 @@
 import './App.css'
-import ModalSecurity from './components/ModalSecurity'
 import { phrases } from './main'
 import {useNavigate} from 'react-router'
 
