@@ -13,10 +13,12 @@
     "lint": "eslint .",
     "postbuild": "cpx 404.html dist",
     "preview": "vite preview",
-    "deploy": "pnpm build && pnpm postbuild && gh-pages -d dist -r https://github.com/lalodsi/twoYearsWithVale.git"
+    "deploy": "pnpm build && pnpm postbuild && gh-pages -d dist -r https://github.com/lalodsi/twoYearsWithVale.git",
+    "generate-qr": "node QR.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "qrcode": "^1.5.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.7.0"
