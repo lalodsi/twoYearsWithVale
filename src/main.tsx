@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
-import { createBrowserRouter, RouterProvider} from 'react-router'
+import { createHashRouter, RouterProvider} from 'react-router'
 import SurpriceTemplate from './components/SurpriseTemplate/index.tsx'
 import FirstPage from './components/Page1/FirstPage.tsx'
 import SecondPage from './components/Page2/SecondPage.tsx'
@@ -39,7 +39,7 @@ export const phrases: Phrase[] = [
 ]
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     Component: App,

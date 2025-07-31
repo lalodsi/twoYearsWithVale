@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 console.log(process.env);
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/' : '/',
+  base: '/twoYearsWithVale/',
   plugins: [react()],
 })

@@ -3,13 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lalodsi/twoYearsWithVale.git"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && pnpm run post-build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "postbuild": "cpx 404.html dist",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "post-build": "powershell Copy-Item -Path 404.html -Destination dist/"
+    "deploy": "pnpm build && pnpm postbuild && gh-pages -d dist -r https://github.com/lalodsi/twoYearsWithVale.git"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -23,6 +27,7 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
+    "cpx": "^1.5.0",
     "eslint": "^9.30.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
