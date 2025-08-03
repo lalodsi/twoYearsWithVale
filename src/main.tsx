@@ -22,19 +22,19 @@ export const phrases: Phrase[] = [
   },
   {
     code: "fusceconsecteturorciattellusmaximusapharetrasapienpulvinar",
-    passphrase: "Luis"
+    passphrase: "Valeria"
   },
   {
     code: "fusceatarcuvitaeelitultriciestincidunt",
-    passphrase: "Luis"
+    passphrase: "Elotes"
   },
   {
     code: "donecfaucibusestquisfacilisisdapibus",
-    passphrase: "Luis"
+    passphrase: "Siemprejuntos"
   },
   {
     code: "nullamollisfelisvitaeauguepellentesquevestibulum",
-    passphrase: "Luis"
+    passphrase: "Love"
   }
 ]
 
